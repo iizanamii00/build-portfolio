@@ -4,6 +4,23 @@
 	box-sizing: border-box;
 }
 
+}
+
+.workbg{
+	background-image: url(../img/workbg.jpg);
+	background-size: cover;
+}
+
+.introbg{
+	background-image: url(../img/introbg.jpg);
+	
+}
+
+.aboutbg{
+	background-image: url(../img/aboutbg.jpg);
+	background-size: cover;
+}
+
 :root{
 	--ff-primary: 'Roboto Mono';
 	-ff-secondary: 'Roboto Mono';
@@ -11,10 +28,10 @@
 	--fw-reg: 300;
 	--fw-bold: 900;
 
-	--clr-light: #fff;
-	--clr-dark: #303030;
+	--clr-light: #303030;
+	--clr-dark: #fff;
 	--clr-accent1: #40E0D0;
-	--clr-accent2: #8A2BE2;
+	--clr-accent2: #40E0D0;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -66,13 +83,12 @@ section {
 	padding: .5em 2.5em;
 	margin-top: 0.25em;
 	background: var(--clr-accent2);
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	font-weight: var(--fw-bold);
 	transition: transform 200ms ease-in-out; 
 }
 
@@ -117,7 +133,7 @@ h3{
 
 .section__subtitle{
 	margin: 0;
-	font-size: var(--fs-h3);
+	font-size: 2rem;
 }
 
 .section__subtitle--intro, .section__subtitle--about{
@@ -135,7 +151,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .nav {
@@ -160,7 +176,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding-left: 2em;
 }
 
 .nav__link {
@@ -186,7 +202,7 @@ header {
 }
 
 .nav-open .nav {
-    transform: translateX(0);
+    transform: translateX(0%);
 }
 
 .nav-open .nav-toggle {
@@ -242,7 +258,7 @@ header {
 	box-shadow: var(--bs);
 }
 
-@media (min-width: 600px){
+@media (min-width: 900px){
 	.intro {
 		display: grid;	
 		width: min-content;
@@ -256,7 +272,7 @@ header {
 
 	.intro__img{
 		grid-area: img;
-		min-width: 250px;
+		min-width: 500px;
 		position: relative;
 		z-index: 2;
 	}
@@ -266,14 +282,14 @@ header {
 		grid-row: 2;
 		text-align: right;
 		position: relative;
-		width: 100%);
+		width: 100%;
 	}
 
 }
 
 .my-services{
 	background-color: var(--clr-dark);
-	background-image: url(../img/background-serv.jpg);
+	background-image: url(../img/servicesbg.jpg);
 	background-size: cover;
 	background-blend-mode: multiply;
 	color: var(--clr-light);
@@ -296,6 +312,7 @@ header {
 }
 
 .serviceitem{
+	color: #fff
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
@@ -316,7 +333,10 @@ header {
 .about-me {
 	max-width: 1000px;
 	margin: 0 auto; 
+	background-image: url(../img/aboutbg.jpg);
+	background-size: cover;
 }
+
 
 .about-me__img {
 	box-shadow: var(--bs);
@@ -341,7 +361,7 @@ header {
 		grid-column: 1 / -1;
 		grid-row: 2;
 		position: relative;
-		left: -1em;
+		left: -2em;
 		padding-left: 2em;
 		padding-right: calc(200px + 4em);
 	}
@@ -355,6 +375,8 @@ header {
 
 .my-work{
 	background-color: var(--clr-dark);
+	background-image: url(../img/workbg.jpg);
+	background-size: cover;
 	color: var(--clr-light);
 	text-align: center;
 }
@@ -367,7 +389,8 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 1em;
 }
 
 .portfolio__item{
@@ -377,7 +400,7 @@ header {
 
 .portfolio__img {
     transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        transform 300ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
 
@@ -395,7 +418,7 @@ header {
 	background: #111;
 	color: var(--clr-accent2);
 	text-align: center;
-	padding: 2.5em 0;
+	padding: 1em 0;
 	font-size: var(--fs-h3);
 }
 
@@ -421,7 +444,7 @@ header {
 	list-style: none;
 	display: flex;
 	justify-content: center;
-	margin: 2em 0 0;
+	margin: 1em 0 0;
 	padding: 0;
 }
 
@@ -431,4 +454,16 @@ header {
 
 .social-list__link {
 	padding: .5em;
+}
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }

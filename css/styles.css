@@ -12,8 +12,8 @@
 
 	--clr-light: rgba(30,30,30,.85);
 	--clr-dark: #fff;
-	--clr-accent1: #40E0D0;
-	--clr-accent2: #40E0D0;
+	--clr-accent1: #33ffb8;
+	--clr-accent2: #33ffb8;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -665,26 +665,4 @@ hr{
 }
 
             
-.partslist {
-	margin-top: -15em;
-	font-family: (--ff-primary); 
- 	list-style: none; 
- 	padding: 5em;
-}
-
-.partslist a {
-	position: relative;
-	display: block;
-    padding: .4em .4em .4em .8em;
-	margin: .5em auto;
-	background:	var(--clr-light);
-	border-radius: 10px; 
-	color: #fff;
-	text-decoration: none;
-}
-
-.partslist a:hover:after {
-  left: -.5em;
-  border-left-color: #f9dd94;
-}
-    
+  

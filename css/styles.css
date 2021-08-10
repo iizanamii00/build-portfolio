@@ -13,7 +13,6 @@
 	--clr-light: rgba(30,30,30,.85);
 	--clr-dark: #fff;
 	--clr-accent1: #33ffb8;
-	--clr-accent2: #33ffb8;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -74,14 +73,13 @@ section {
 .btn{
 	border-radius: 10px;
 	display: inline-block;
-	padding: .5em 2.5em;
+	padding: .5em 1.5em;
 	margin-top: 0.25em;
-	background: var(--clr-accent2);
+	background: var(--clr-accent1);
 	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
 	font-size: 1.5rem;
-	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	transition: transform 200ms ease-in-out; 
 }
@@ -184,7 +182,7 @@ header {
 
 
 .nav__link:hover{
-	color: var(--clr-accent2);
+	color: var(--clr-accent1);
 }
 
 .nav-toggle {
@@ -208,12 +206,12 @@ header {
 
 .nav-open .hamburger {
 	transform: rotate(.625turn);
-	background: var(--clr-accent2)
+	background: var(--clr-accent1)
 }
 
 .nav-open .hamburger::before{
 	transform: rotate(90deg) translateX(-6px);
-	background: var(--clr-accent2)
+	background: var(--clr-accent1)
 }
 
 .nav-open .hamburger::after{
@@ -438,7 +436,7 @@ header {
 
 .portfolio__item{
 	border-radius: 10px;
-	background: var(--clr-accent2);
+	background: var(--clr-accent1);
 	overflow: hidden;
 }
 
@@ -470,7 +468,7 @@ header {
 
 .footer {
 	background: rgba(20,20,20, .85);
-	color: var(--clr-accent2);
+	color: var(--clr-accent1);
 	text-align: center;
 	padding: 1em 0;
 	font-size: var(--fs-h3);
@@ -686,3 +684,37 @@ hr{
 	margin-bottom: 1em;
 }
 
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-size: .75em;
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--clr-accent1);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--clr-accent1) transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

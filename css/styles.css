@@ -431,7 +431,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1.5em;
     margin-top: 2.5em;
-}
+	}
 }
 
 .portfolio__item{
@@ -552,7 +552,7 @@ header {
     height: 45px;
     background: #40E0D0;
     text-align: center;
-    font-size: 22px;
+    font-size: var(--fs-h3);
     color: #fff;
     line-height: 42px;
     position: absolute;
@@ -568,7 +568,7 @@ header {
     left: 1px;
 }
 .testimonial .description{
-    font-size: 15px;
+    font-size: var(--fs-h3);
     font-family: var(--ff-primary);
     color: #8a8a8a;
     line-height: 23px;
@@ -576,7 +576,7 @@ header {
 }
 .testimonial .title{
     display: block;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: var(--ff-primary);
     color: #fff;
@@ -656,33 +656,91 @@ hr{
 	border-radius: 10px;
 }
 
-.portfolio-item-desc{
-	background: var(--clr-light);
-	margin: 4em;
-	border-radius: 10px;
-	padding: 1em;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 1em;
+
+@media(min-width: 300px){
+	.portfolio-item-desc{
+		background: var(--clr-light);
+		margin: 2em;
+		border-radius: 10px;
+		padding: 1em;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1.5em;
+	}
+
+	.project_intro{
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+	}
+
+	.part a{
+		color: #fff;
+		text-decoration: none;
+		padding-top: 1em;
+		font-size: 1em;
+	}
+
+	.part img{
+		width: 50px;
+	}
+
+	.port-summary{
+
+		margin: 2em;
+	}
+
+	.part{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: 1.5em;
+	}
+	           
 }
 
-.part a{
-	color: #fff;
-	text-decoration: none;
-	padding-top: 1em;
-	font-size: var(--fs-h3)
-}
 
 
-.part{
-	display: grid;
-	grid-template-columns: 1fr 2fr;
+@media(min-width: 600px){
+
+	.portfolio-item-desc{
+		background: var(--clr-light);
+		margin: 4em;
+		border-radius: 10px;
+		padding: 1em;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+	}
+
+	.part a{
+		color: #fff;
+		text-decoration: none;
+		padding-top: 1em;
+		grid-gap: 2em;
+		font-size: var(--fs-h3)
+	}
+
+	.part img{
+		width: 100px;
+	}
+
+	.port-summary{
+		background-color: var(--clr-light);
+		margin: 4em;
+		padding: 1em;
+		border-radius: 10px;
+		}
+
+	.part{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	           
+	.project_intro{
+		padding: 3.5em;
+		margin-bottom: 1em;
+	}
 }
-           
-.project_intro{
-	padding: 1em;
-	margin-bottom: 1em;
-}
+
 
 
 .tooltip {

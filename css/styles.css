@@ -651,18 +651,38 @@ hr{
 	margin: 1em auto;
 }
 
-.portfolio-item-individual{
-	max-width: 80%;
-	border-radius: 10px; 
-	font-size: var(--fs-h3);
-	padding: 2em 3em;
-	margin: .5em auto;
+.port-summary{
 	background-color: var(--clr-light);
+	margin: 4em;
+	padding: 1em;
+	border-radius: 10px;
 }
 
 .portfolio-item-desc{
-	font-size: var(--fs-h3);
+	background: var(--clr-light);
+	margin: 4em;
+	border-radius: 10px;
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
 }
 
-            
-  
+.part a{
+	color: #fff;
+	text-decoration: none;
+	padding-top: 1em;
+	font-size: var(--fs-h3)
+}
+
+
+.part{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+           
+.project_intro{
+	padding: 1em;
+	margin-bottom: 1em;
+}
+

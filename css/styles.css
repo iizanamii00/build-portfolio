@@ -788,12 +788,14 @@ hr{
 	text-align: right;
 	background-color:#33ffb8;
 	padding: .25em;
+	border-radius: 10px 0 0 10px;
 }
 
 .refe{
 	text-align: right;
 	background-color: #1e966d;
 	padding: .25em;
+	border-radius: 0 10px 10px 0;
 }
 
 .bar1{

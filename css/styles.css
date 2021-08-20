@@ -251,6 +251,7 @@ header {
 	    font-weight: var(--fw-bold);
 	    font-size: 1rem;
 	    text-decoration: none;
+		justify-content: center;
 	}
 	.nav-open .nav {
     transform: translateX(0%);
@@ -261,10 +262,8 @@ header {
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     font-size: 1.5em;
     margin: 0;
-    padding-left: 2em;
 }
 }
 .intro {
@@ -295,7 +294,7 @@ header {
 
 	.intro__img{
 		grid-area: img;
-		min-width: 600px;
+		min-width: 400px;
 		position: relative;
 		z-index: 2;
 	}
@@ -387,7 +386,7 @@ header {
 			"title title"
 			"text img"
 			"text img";
-		grid-column-gap: 2em; 
+		grid-column-gap: 3.5em; 
 	}
 
 	.section__title--about{
@@ -517,7 +516,7 @@ header {
 }
 
 .portfolio-item-individual p {
-    max-width: 1000px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -570,7 +569,7 @@ header {
     left: 1px;
 }
 .testimonial .description{
-    font-size: var(--fs-h3);
+    font-size: 1em;
     font-family: var(--ff-primary);
     color: #8a8a8a;
     line-height: 23px;
@@ -607,7 +606,7 @@ header {
 
 .testwrapper{
 	margin-top: -1em;
-	padding: 5em;
+	padding: 2em;
 	background: var(--clr-light);
 	background-size: cover;
 }

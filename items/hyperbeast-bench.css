@@ -1,0 +1,29 @@
+.bar1{
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 34% 66%;
+}
+
+.bar2{
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 41% 59%;
+}
+
+.bar3{
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 31% 69%;
+}
+
+.bar4{
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 42% 58%;
+}
+
+.bar5{
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 31% 69%;
+}

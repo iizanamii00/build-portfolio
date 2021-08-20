@@ -254,7 +254,7 @@ header {
 		justify-content: center;
 	}
 	.nav-open .nav {
-    transform: translateX(0%);
+    transform: translateX(60%);
 	}
 	.nav__list {
     list-style: none;
